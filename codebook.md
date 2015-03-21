@@ -22,8 +22,7 @@ INPUT DATA
 The following sections describe the Input data used in this assignment.  The data is from
 the website https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 The .zip file was downloaded and unzipped into the working directory with R functions.
-
-
+The section below describes the dataset, as taken from the dataset readme file.
 ########################################################################################
 ########################################################################################
 ==================================================================
@@ -53,9 +52,6 @@ For each record it is provided:
 
 The dataset includes the following files:
 =========================================
-
-- 'README.txt'
-
 - 'features_info.txt': Shows information about the variables used on the feature vector.
 
 - 'features.txt': List of all features.
@@ -714,6 +710,8 @@ activity	text string with values ("WALKING", "WALKING_UPSTAIRS",
 
 DATA PROCESSING DESCRIPTION
 The data in the input files was processed by function run_analysis.R.
+run_analysis.R is included in the package of files.
+See README.txt for detailed description of the script processing.
 The purpose of run_analysis.R was to meet the following objectives of the project
 assignment as follows:
 Create one R script called run_analysis.R that does the following. 
@@ -730,7 +728,9 @@ Create one R script called run_analysis.R that does the following.
 DATA FORMAT of OUTPUT FILES
 The data in the output files is a result of processing by function run_analysis.R.
 
-FILE FORMATS
+########################################################################################
+########################################################################################
+FILE FORMAT
 File Description: Table of averages of the mean and std dev. of the measurements
                   by subject ID and by activity
 Filename: ave_of_mean_stdev_by_sub_act.txt
@@ -750,16 +750,16 @@ Activity                               text string with values ("WALKING", "WALK
  AVE_of_tBodyAccJerk-mean()-X	                	g
  AVE_of_tBodyAccJerk-mean()-Y	                	g
  AVE_of_tBodyAccJerk-mean()-Z	                	g
- AVE_of_tBodyGyro-mean()-X	                   	radians/sec
- AVE_of_tBodyGyro-mean()-Y	                   	radians/sec
- AVE_of_tBodyGyro-mean()-Z	                   	radians/sec
+ AVE_of_tBodyGyro-mean()-X	                    	radians/sec
+ AVE_of_tBodyGyro-mean()-Y	                    	radians/sec
+ AVE_of_tBodyGyro-mean()-Z	                    	radians/sec
  AVE_of_tBodyGyroJerk-mean()-X	               	   	radians/sec
  AVE_of_tBodyGyroJerk-mean()-Y	               	   	radians/sec
  AVE_of_tBodyGyroJerk-mean()-Z	               	   	radians/sec
- AVE_of_tBodyAccMag-mean()	                   	g
+ AVE_of_tBodyAccMag-mean()	                    	g
  AVE_of_tGravityAccMag-mean()	                	g
  AVE_of_tBodyAccJerkMag-mean()	               	   	g
- AVE_of_tBodyGyroMag-mean()	                  	radians/sec
+ AVE_of_tBodyGyroMag-mean()	                    	radians/sec
  AVE_of_tBodyGyroJerkMag-mean()	              	   	radians/sec
  AVE_of_fBodyAcc-mean()-X	                    	g
  AVE_of_fBodyAcc-mean()-Y	                    	g
@@ -773,21 +773,21 @@ Activity                               text string with values ("WALKING", "WALK
  AVE_of_fBodyAccJerk-meanFreq()-X	            	g
  AVE_of_fBodyAccJerk-meanFreq()-Y	            	g
  AVE_of_fBodyAccJerk-meanFreq()-Z	            	g
- AVE_of_fBodyGyro-mean()-X	                   	radians/sec
- AVE_of_fBodyGyro-mean()-Y	                   	radians/sec
- AVE_of_fBodyGyro-mean()-Z	                   	radians/sec
+ AVE_of_fBodyGyro-mean()-X	                    	radians/sec
+ AVE_of_fBodyGyro-mean()-Y	                    	radians/sec
+ AVE_of_fBodyGyro-mean()-Z	                    	radians/sec
  AVE_of_fBodyGyro-meanFreq()-X	               	   	radians/sec
  AVE_of_fBodyGyro-meanFreq()-Y	                  	radians/sec
  AVE_of_fBodyGyro-meanFreq()-Z	               	   	radians/sec
- AVE_of_fBodyAccMag-mean()	                   	g
+ AVE_of_fBodyAccMag-mean()	                    	g
  AVE_of_fBodyAccMag-meanFreq()	               	   	g
- AVE_of_fBodyBodyAccJerkMag-mean()	           	g
+ AVE_of_fBodyBodyAccJerkMag-mean()	            	g
  AVE_of_fBodyBodyAccJerkMag-meanFreq()	       	   	g
  AVE_of_fBodyBodyGyroMag-mean()	              	   	radians/sec
- AVE_of_fBodyBodyGyroMag-meanFreq()	          	radians/sec
- AVE_of_fBodyBodyGyroJerkMag-mean()	          	radians/sec
+ AVE_of_fBodyBodyGyroMag-meanFreq()	            	radians/sec
+ AVE_of_fBodyBodyGyroJerkMag-mean()	            	radians/sec
  AVE_of_fBodyBodyGyroJerkMag-meanFreq()	      	   	radians/sec
- AVE_of_angle(tBodyAccMean,gravity)	          	radians
+ AVE_of_angle(tBodyAccMean,gravity)	            	radians
  AVE_of_angle(tBodyAccJerkMean),gravityMean)	 	radians
  AVE_of_angle(tBodyGyroMean,gravityMean)	     	radians
  AVE_of_angle(tBodyGyroJerkMean,gravityMean)	 	radians
@@ -797,9 +797,9 @@ Activity                               text string with values ("WALKING", "WALK
  AVE_of_tBodyAcc-std()-X	                     	g
  AVE_of_tBodyAcc-std()-Y	                     	g
  AVE_of_tBodyAcc-std()-Z	                     	g
- AVE_of_tGravityAcc-std()-X	                  	g
- AVE_of_tGravityAcc-std()-Y	                  	g
- AVE_of_tGravityAcc-std()-Z	                  	g
+ AVE_of_tGravityAcc-std()-X	                    	g
+ AVE_of_tGravityAcc-std()-Y	                    	g
+ AVE_of_tGravityAcc-std()-Z	                    	g
  AVE_of_tBodyAccJerk-std()-X	                 	g
  AVE_of_tBodyAccJerk-std()-Y	                 	g
  AVE_of_tBodyAccJerk-std()-Z	                 	g
@@ -812,7 +812,7 @@ Activity                               text string with values ("WALKING", "WALK
  AVE_of_tBodyAccMag-std()	                    	g
  AVE_of_tGravityAccMag-std()	                 	g
  AVE_of_tBodyAccJerkMag-std()	                	g
- AVE_of_tBodyGyroMag-std()	                   	radians/sec
+ AVE_of_tBodyGyroMag-std()	                    	radians/sec
  AVE_of_tBodyGyroJerkMag-std()	               	   	radians/sec
  AVE_of_fBodyAcc-std()-X	                     	g
  AVE_of_fBodyAcc-std()-Y	                     	g
@@ -826,7 +826,7 @@ Activity                               text string with values ("WALKING", "WALK
  AVE_of_fBodyAccMag-std()	                    	g
  AVE_of_fBodyBodyAccJerkMag-std()	            	g
  AVE_of_fBodyBodyGyroMag-std()	               	   	radians/sec
- AVE_of_fBodyBodyGyroJerkMag-std()	           	radians/sec
+ AVE_of_fBodyBodyGyroJerkMag-std()	           	    radians/sec
 
 
 
