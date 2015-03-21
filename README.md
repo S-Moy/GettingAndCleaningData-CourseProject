@@ -45,11 +45,11 @@ PROCESSING STEPS OF run_analysis.R
           ./text/X_test.txt                                ##test data
           ./text/Y_test.txt                                ##activity for test data
 
-    3. Create data tables from the downloaded data files from test and training subjects
-    4. Combine the test data with the training data
-    5. Create data tables from  activity files for test and training
+    3. Create data tables from the downloaded data files from test and training subjects (X_test and X_train)
+    4. Combine the test data with the training data 
+    5. Create data tables from  activity files for test and training (Y_test and Y_train)
     6. Combine the activity test data with the training data
-    7. Create data tables from subject ID files for test and training
+    7. Create data tables from subject ID files for test and training (subject_test and subject_train)
     8. Combine the subject ID test data with the training data
     9. Translate the activity integer values in Y_train.test to descriptive values
        Execute the function convert to do the translation
@@ -59,7 +59,7 @@ PROCESSING STEPS OF run_analysis.R
     13. Add columns for subject ID and activity to create data set for mean,std by subject Id and activity
     14. Set column names for the Subject ID, Activity, and the mean/std data columns
     15. Create the data set of averages of the mean and std dev data by subject and activity
-    16. Function ave_mean_std will calculate average of each data column for each subject ID then calculate average for each activity
+    16. Execute Function ave_mean_std will calculate average of each data column for each subject ID then calculate average for each activity
     17. Call the function ave_mean_std to create the dataset for averages of mean and stdev of the HCI data
-    18. Write data for extracted mean and stdev measurements to file, call it "mean_stdev_data.txt"
+    18. Write data for extracted mean and stdev measurements to file, call it "mean_stdev_data.txt" 
     19. Write data for the average of the extracted mean and stev data to file, call it "ave_of_mean_stdev_data.txt"
